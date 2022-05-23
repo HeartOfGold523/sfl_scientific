@@ -54,6 +54,8 @@ for a production build. With `npm start`, our frontend should open by default wh
 
 # What are next steps?
 
+- Cleanup some API queries.
+    - For example, downloading a filtered dataset results in 2 POST queries to the API currently. One to retrieve the data as JSON object and the other to retrieve the file for download.
 - Query for Latitude/Longitude and display the nearest results.
     - This is an inherent issue with the way I've set up my application as paginated data containing separate maps for each data point. If I were to create 1 overall large map with 10,000 different markers on the map instead, this kind of query would be more feasible.
 - Deploying to AWS instead of Heroku
