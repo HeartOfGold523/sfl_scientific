@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+}
+h1 {
+  text-align: center;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 2px;
+  margin: 30px 0;
+  padding: 0 30px;
+}
+.search-container {
+  padding: 0 30px;
+}
+.search-container input,
+.search-container button {
+  background-color: white;
+  height: 60px;
+  flex: 1 1;
+  margin: 0 15px;
+  border: 1px solid black;
+  border-radius: 16px;
+  padding: 0 10px;
+  font-size: 24px;
+  cursor: text;
+}
+.search-container .search-button {
+  cursor: pointer;
+  background-color: #6A7FDB;
+  color: white;
+}
+.search-container .download-button {
+  cursor: pointer;
+  background-color: #003459;
+  color: white;
+}
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+.pagination-item {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background-color: white;
+  color: #003459;
+  border: 1px solid #6A7FDB;
+  cursor: pointer;
+  font-size: 24px;
+  margin: 0 10px;
+}
+.prev,
+.next {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background-color: white;
+  border: 1px solid #6A7FDB;
+  cursor: pointer;
+  font-size: 16px;
+  color: #003459;
+}
+.pagination-item.active {
+  border: 1px solid #003459;
+  color: #6A7FDB;
+  pointer-events: none;
+}
+.pagination-item:hover,
+.prev:hover,
+.next:hover,
+.search-container input:hover {
+  opacity: 0.5;
+}
+.search-container .search-button:hover,
+.search-container .download-button:hover {
+  background-color: #320A28;
+}
+.prev.disabled,
+.next.disabled {
+  pointer-events: none;
+  box-shadow: none;
+  border: 1px solid #999;
+  color: #999;
+}
+.data-container .bookmark-input {
+  background-color: white;
+  height: 38px;
+  border: 1px solid black;
+  border-radius: 16px 0 0 16px;
+  padding: 0 10px;
+  font-size: 16px;
+  cursor: text;
+}
+.data-container .bookmark-button {
+  background-color: #6A7FDB;
+  color: white;
+  width: 100px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 0 16px 16px 0;
+  padding: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.data-container .bookmark-button:hover {
+  background-color: #003459; 
+}
