@@ -4,8 +4,6 @@ import MapComponent from './Map'
 import './App.css'
 var fileDownload = require('js-file-download');
 
-//test new commit
-
 const App = () => {
   // data that will be displayed
   const [data, setData] = useState({})
