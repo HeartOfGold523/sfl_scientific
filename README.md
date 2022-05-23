@@ -60,4 +60,6 @@ for a production build. With `npm start`, our frontend should open by default wh
     - This is an inherent issue with the way I've set up my application as paginated data containing separate maps for each data point. If I were to create 1 overall large map with 10,000 different markers on the map instead, this kind of query would be more feasible.
 - Deploying to AWS instead of Heroku
 - Handle addition and rolling-back of datasets.
+- Split App.js (React) into more components
+    - The file at above 250 lines of code can get a little unmanageable... For an MVP, I tried to focus more on completing tasks than best practices
 - Setup Tests! Test-driven development is key to having a working final result.
