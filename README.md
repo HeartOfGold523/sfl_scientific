@@ -8,7 +8,7 @@ Please check out my app on Heroku: https://sfl-scientific.herokuapp.com/index.ht
 
 # Any Figma Designs?
 
-For the purpose of this project, I quickly spun up my own Wireframe you find here: https://www.figma.com/file/cGgiY4Uhmi01BMOG5PqSiB/SFL-Scientific?node-id=0%3A1
+For the purpose of this project, I quickly spun up my own Wireframe you can find here: https://www.figma.com/file/cGgiY4Uhmi01BMOG5PqSiB/SFL-Scientific?node-id=0%3A1
 
 # How do I set up the project locally?
 
@@ -51,3 +51,11 @@ or:
 ### `npm run build`
 
 for a production build. With `npm start`, our frontend should open by default when it's ready, but if not, you can navigate to http://localhost:3000/ to view the app.
+
+# What are next steps?
+
+- Query for Latitude/Longitude and display the nearest results.
+    - This is an inherent issue with the way I've set up my application as paginated data containing separate maps for each data point. If I were to create 1 overall large map with 10,000 different markers on the map instead, this kind of query would be more feasible.
+- Deploying to AWS instead of Heroku
+- Handle addition and rolling-back of datasets.
+- Setup Tests! Test-driven development is key to having a working final result.
