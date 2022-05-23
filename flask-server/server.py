@@ -3,7 +3,7 @@ from flask import request, send_file, Flask
 from flask_restful import Resource, Api
 import pandas as pd
 
-app = Flask(__name__, static_folder='../client/build')
+app = Flask(__name__, static_folder='client/build')
 api = Api(app)
 
 class Locations(Resource):
