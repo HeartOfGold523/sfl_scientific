@@ -143,7 +143,9 @@ const App = () => {
       console.log(res)
       bookmarks[index] = ''
       setBookmarkInputs(bookmarks)
-      setData(JSON.parse(res.data.data))
+      let jd = JSON.parse(res.data.data)
+      setData(jd)
+      setOriginalData(jd)
     })
     .catch(error => {
       console.log(error)
